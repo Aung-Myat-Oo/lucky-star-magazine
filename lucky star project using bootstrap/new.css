@@ -1,0 +1,70 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #cabbe9;
+  --white: rgb(255, 255, 255);
+  --text-white: white;
+  --text-black: black;
+  --whitesmoke: whitesmoke;
+}
+/* nav bar  */
+nav {
+  background-color: var(--whitesmoke);
+}
+nav img {
+  width: 150px;
+}
+nav i {
+  font-size: 1.5rem;
+}
+.toggle-nav {
+  height: 0;
+  overflow: hidden;
+  top: 3rem;
+  right: 1rem;
+  background-color: rgb(158, 158, 158);
+  position: absolute;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 100;
+}
+.toggle-nav ul {
+  padding: 50px 80px;
+}
+.open {
+  height: 230px;
+}
+.first-ul li {
+  position: relative;
+}
+.first-ul li::after {
+  content: "";
+  background-color: black;
+  height: 2px;
+  width: 0;
+  transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.first-ul li:hover::after {
+  width: 100%;
+}
+/* main */
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.read-btn {
+  background-color: var(--primary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.read-btn:hover {
+  transform: translate(0, -5px);
+}

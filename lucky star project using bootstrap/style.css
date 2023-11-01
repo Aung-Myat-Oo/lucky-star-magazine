@@ -31,6 +31,7 @@ nav i {
   background-color: rgb(158, 158, 158);
   position: absolute;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 100;
 }
 .toggle-nav ul {
   padding: 50px 80px;
@@ -60,7 +61,7 @@ nav i {
   position: relative;
   color: #1622a1;
 }
-.sec-text::after{
+.sec-text::after {
   left: 0;
   top: 0;
   position: absolute;
@@ -69,24 +70,24 @@ nav i {
   height: 100%;
   width: 100%;
   content: "";
-  animation: text 3.5s ease-in-out infinite
+  animation: text 3.5s ease-in-out infinite;
 }
-@keyframes text{
-  40%,60%{
+@keyframes text {
+  40%,
+  60% {
     left: 100%;
   }
-  100%{
+  100% {
     left: 0;
   }
 }
 
-
 /* gird box  */
 
-.provide{
+.provide {
   color: #1622a1;
 }
-.team-members{
+.team-members {
   background-color: var(--primary);
   height: 700px;
   overflow-y: scroll;
@@ -96,17 +97,16 @@ nav i {
   align-items: start;
   gap: 10px;
 }
-.team-members::-webkit-scrollbar{
+.team-members::-webkit-scrollbar {
   width: 0;
 }
-.team-member img{
-  width: 100px;
-  height: 100px;
+.team-member img {
+  width: 25%;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.team-member{
+.team-member {
   width: 100%;
   padding: 15px 0px;
   display: flex;
@@ -114,7 +114,7 @@ nav i {
   justify-content: space-around;
   border-bottom: 1px solid black;
 }
-.team-member h5{
+.team-member h5 {
   font-weight: bold;
 }
 
@@ -125,9 +125,7 @@ nav i {
   height: fit-content;
   grid-column: 4/6;
   grid-row: 6/7;
-  box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -163,54 +161,53 @@ nav i {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 80%;
 }
-.rate-stick i{
+.rate-stick i {
   color: rgb(255, 194, 82);
 }
 .rate-stick div {
   margin-bottom: 10px;
   height: 20px;
-  width: 200px;
+  width: 80%;
   border-radius: 10px;
   background-color: rgba(194, 194, 194, 0.678);
 }
-.card-self .rate-stick:nth-child(3) div:after{
-  content: "";
-  width: 80px;
+.card-self .rate-stick:nth-child(3) div div {
+  width: 50%;
   height: 20px;
   background-color: rgb(255, 194, 82);
-  position: absolute;
   border-radius: 10px;
 }
-.card-self .rate-stick:nth-child(4) div:after {
-  content: "";
-  width: 120px;
+.card-self .rate-stick:nth-child(4) div div {
+  width: 60%;
   height: 20px;
   background-color: rgb(255, 194, 82);
-  position: absolute;
   border-radius: 10px;
 }
-.card-self .rate-stick:nth-child(5) div:after {
-  content: "";
-  width: 90px;
+.card-self .rate-stick:nth-child(5) div div {
+  width: 65%;
   height: 20px;
   background-color: rgb(255, 194, 82);
-  position: absolute;
   border-radius: 10px;
 }
-.card-self .rate-stick:nth-child(6) div:after {
-  content: "";
-  width: 140px;
+.card-self .rate-stick:nth-child(6) div div {
+  width: 56%;
   height: 20px;
   background-color: rgb(255, 194, 82);
-  position: absolute;
   border-radius: 10px;
 }
-.card-self .rate-stick:nth-child(7) div:after {
-  content: "";
-  width: 80px;
+.card-self .rate-stick:nth-child(7) div div {
+  width: 78%;
   height: 20px;
   background-color: rgb(255, 194, 82);
-  position: absolute;
   border-radius: 10px;
+}
+
+/* footer  */
+footer div {
+  background-color: var(--primary);
+}
+footer div p span {
+  color: #1622a1;
 }

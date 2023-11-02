@@ -13,6 +13,13 @@
   --text-black: black;
   --whitesmoke: whitesmoke;
 }
+.dark-theme {
+  --primary: #cabbe9;
+  --white: rgb(255, 255, 255);
+  --text-white: black;
+  --text-black: rgb(255, 255, 255);
+  --whitesmoke: whitesmoke;
+}
 /* nav bar  */
 nav {
   background-color: var(--whitesmoke);
@@ -37,7 +44,7 @@ nav i {
   padding: 50px 80px;
 }
 .open {
-  height: 230px;
+  height: 180px;
 }
 .first-ul li {
   position: relative;
@@ -82,6 +89,9 @@ nav i {
   }
 }
 
+.for-change-color{
+  color: var(--text-black);
+}
 /* gird box  */
 
 .provide {
